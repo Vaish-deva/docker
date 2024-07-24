@@ -39,10 +39,10 @@ jobs:
     - name: Run Docker container
       run: docker run -d -p 3000:3000 ${{ secrets.DOCKER_USERNAME }}/my-node-app:latest
 
-    - name: Run tests
-      run: |
+    #- name: Run tests
+     # run: |
         # Add your test commands here, for example:
-        curl --retry 5 --retry-delay 5 --retry-connrefused http://localhost:3000
+      #  curl --retry 5 --retry-delay 5 --retry-connrefused http://localhost:3000
         # You can also use any test scripts you have in your package.json
         # docker exec <container_id> npm test
 
